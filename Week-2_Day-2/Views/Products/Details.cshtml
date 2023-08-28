@@ -1,0 +1,20 @@
+﻿
+@model Week_2_Day_2.ViewModels.ProductDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Product Details</h1>
+
+<p class="text-success fw-bold">@Model.DisplayMessage</p>
+
+<div>
+    <strong>Product Id : </strong> @Model.Product.Id<br />
+    <strong>Name : </strong> @Model.Product.Name<br />
+    <strong>Price : </strong> @Model.Product.Price<br />
+</div>
+<div class="">
+    <a asp-action="Index" class="btn btn-sm btn-success mt-3">Back To List</a>
+</div>
+
